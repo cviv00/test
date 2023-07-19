@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.back-vedio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title
+{
+    position:absolute;
+    font-weight: 600;
+    font-size: 2em;
+    color:rgb(95, 121, 194);
+    display: inline-flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.player{
+    position: relative;
+    top: 100px;
+    width: 500px;
+    min-height: 100px;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 80px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px #fff,
+                10px 10px 15px rgba(0,0,0,0,1),
+                inset -5px -5px 15px #fff;
+                inset: 5px 5px 15px rgba(0,0,0,0,1);
+}
+
+.btns{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btns span{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ebe1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    cursor: pointer;
+    box-shadow: inset 0 -5px 5px rgba(0,0,0,0,1),
+                0 5px 10px rgba(0,0,0,0,1),
+                0 10px 15px  rgba(0,0,0,0,1);
+}
+.btns span:active
+{
+    color: #ff669a;
+    box-shadow: inset 0 -7px 5px rgba(0,0,0,0,025),
+                inset 0 5px 10px rgba(0,0,0,0.15);
+}
+.btns span.PlayPause{
+  width: 100px;
+  height: 100px;
+}
+.btns span ion-icon
+{
+  font-size: 2em;
+}
+.btns span.PlayPause ion-icon{
+    font-size: 3em;
+}
+
+
+
